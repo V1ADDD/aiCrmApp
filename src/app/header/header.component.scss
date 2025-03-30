@@ -1,0 +1,21 @@
+.header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 36px 72px;
+    text-shadow: 0.4px 0.4px 0 white;
+    &__logo {
+        font-size: 24px;
+    }
+    &__nav {
+        ul {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            gap: 36px;
+            li {
+                list-style-type: none;
+            }
+        }
+    }
+}
