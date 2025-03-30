@@ -28,7 +28,7 @@
         transition: all 1s ease-in-out;
         &:hover {
             border-radius: 32px;
-            box-shadow: 3px 3px 0 white;
+            box-shadow: 1px 1px 0 white, -1px 1px 0 white, -1px -1px 0 white, 1px -1px 0 white;
         }
     }
 }
