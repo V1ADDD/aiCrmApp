@@ -3,3 +3,16 @@
     <p class="main__subheading">Leading the Future of Automation</p>
     <button>Get Started</button>
 </article>
+<section class="services">
+    <h2 class="services__heading">Services</h2>
+    <div class="services__cards">
+        @for (service of servicesList(); track service.id) {
+            <div class="services__cards__card">
+                <h3>{{ service.name }}</h3>
+                <hr>
+                <p>{{ service.price | currency: 'USD' : 'symbol' : '1.0-0'}}</p>
+                <button>Book Now</button>
+            </div>
+        }
+    </div>
+</section>
