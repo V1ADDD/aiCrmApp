@@ -16,3 +16,16 @@
         }
     </div>
 </section>
+<section class="events">
+    <h2 class="events__heading">Events</h2>
+    <div class="events__cards">
+        @for (event of eventsList(); track event.id) {
+            <div class="events__cards__card">
+                <h3>{{ event.name }}</h3>
+                <p>{{ event.date }}</p>
+                <p>{{ event.address }}</p>
+                <button>Register Now</button>
+            </div>
+        }
+    </div>
+</section>
