@@ -35,8 +35,9 @@
     <div class="blog__cards">
         @for (blog of blogList(); track blog.id) {
             <div class="blog__cards__card">
-                <h3>{{ blog.name }}</h3>
+                <img [src]="'assets/images/' + blog.image">
                 <p>{{ blog.author }}</p>
+                <h3>{{ blog.name }}</h3>
                 <p>{{ blog.description }}</p>
                 <hr>
                 <div class="blog__cards__card__footer">

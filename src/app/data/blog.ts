@@ -8,7 +8,7 @@ export const blog = [
         author: "Henry G",
         views: 1232,
         likes: 78, 
-        image: "blog1",
+        image: "blog1.png",
     },
     {
         id: 2,
@@ -19,7 +19,7 @@ export const blog = [
         author: "Rusak V",
         views: 3219,
         likes: 560, 
-        image: "blog2",
+        image: "blog2.png",
     },
     {
         id: 3,
@@ -27,9 +27,9 @@ export const blog = [
         description: `In today's fast-paced business environment, efficiency is key to staying ahead of the competition. With the rapid advancements in technology, leveraging AI automation tools has become crucial for streamlining operations and driving growth. One agency that is at the forefront of empowering businesses with AI automation is AIBoost.
         AIBoost, a leading AI Automation Agency established in 2025, offers a comprehensive platform designed to help businesses automate tasks using cutting-edge AI tools. From AI chatbot integrations to workflow automation similar to Zapier, their platform provides a wide range of features to make workflows smarter, faster, and more efficient. By streamlining processes and eliminating manual tasks, businesses can significantly boost productivity and focus on strategic initiatives. One of the standout features of AIBoost's platform is its user-friendly dashboard, where users can easily sign up, choose automation tools, and manage everything seamlessly. Whether it's managing leads and tasks with their CRM system or analyzing performance through detailed analytics and reports, the platform offers a centralized hub for businesses to optimize their operations. Moreover, AIBoost prioritizes customer support, offering live chat assistance to ensure a smooth user experience. Additionally, the agency provides valuable resources such as a blog/knowledge base, videos, and tutorials to help businesses maximize the benefits of AI automation tools. By sharing insights on AI trends, automation strategies, and integration tutorials, AIBoost aims to educate and empower businesses to leverage AI effectively. Furthermore, AIBoost focuses on enhancing brand awareness through compelling case studies and engaging thought leadership content. By showcasing the real-world impact of AI automation through success stories, the agency aims to attract potential clients and build a strong community of like-minded businesses. Additionally, offering a free AI Automation Audit or Guide enables AIBoost to generate leads and demonstrate the value of their platform. In line with their commitment to continuous improvement, AIBoost also leverages SEO and content strategy to drive organic traffic to their website. By publishing relevant content that resonates with their target audience, such as AI trends and integration tutorials, the agency positions itself as a thought leader in the AI automation space. In conclusion, AIBoost is a trailblazer in the AI automation industry, empowering businesses to maximize efficiency and drive growth through innovative AI tools. By offering a comprehensive platform, valuable resources, and exceptional customer support, AIBoost is helping businesses revolutionize their operations and unlock their full potential in the digital age.
         `,
-        author: "Henry G",
+        author: "Makov K",
         views: 2378,
         likes: 134, 
-        image: "blog3",
+        image: "blog3.png",
     },
 ]
