@@ -2,6 +2,7 @@ import { Component, signal } from '@angular/core';
 import { services } from '../data/services';
 import { CurrencyPipe } from '@angular/common';
 import { events } from '../data/events';
+import { blog } from '../data/blog';
 
 @Component({
   selector: 'app-home',
@@ -12,4 +13,5 @@ import { events } from '../data/events';
 export class HomeComponent {
   servicesList = signal(services);
   eventsList = signal(events);
+  blogList = signal(blog);
 }

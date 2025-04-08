@@ -1,8 +1,18 @@
-.main {
+.background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -1;
     background: url('../images/background.png');
     background-position: center;
     background-repeat: no-repeat;
     background-size: 55%;
+    width: 100vw;
+    height: 85vh;
+    animation: scroll-slide linear;
+    animation-timeline: scroll();
+}
+.main {
     width: auto;
     height: 85vh;
     text-align: center;
@@ -31,13 +41,19 @@
             box-shadow: 1px 1px 0 white, -1px 1px 0 white, -1px -1px 0 white, 1px -1px 0 white;
         }
     }
-    animation: scroll-slide linear;
-    animation-timeline: scroll();
 }
 @keyframes scroll-slide {
-    to {
-        background-position-x: 10vw;
+    33% {
+        background-position-x: 5vw;
+        background-size: 70%;
+    }
+    70% {
+        background-position-x: 15vw;
         background-size: 80%;
+    }
+    100% {
+        background-position-x: center;
+        background-size: 55%;
     }
 }
 // @keyframes scroll-blocks {

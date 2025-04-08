@@ -1,3 +1,4 @@
+<div class="background"></div>
 <article class="main">
     <h2 class="main__heading">AI Boosting Your Success</h2>
     <p class="main__subheading">Leading the Future of Automation</p>
@@ -25,6 +26,23 @@
                 <p>{{ event.date }}</p>
                 <p>{{ event.address }}</p>
                 <button>Register Now</button>
+            </div>
+        }
+    </div>
+</section>
+<section class="blog">
+    <h2 class="blog__heading">Blog</h2>
+    <div class="blog__cards">
+        @for (blog of blogList(); track blog.id) {
+            <div class="blog__cards__card">
+                <h3>{{ blog.name }}</h3>
+                <p>{{ blog.author }}</p>
+                <p>{{ blog.description }}</p>
+                <hr>
+                <div class="blog__cards__card__footer">
+                    <div class="blog__cards__card__views">{{ blog.views }}</div>
+                    <div class="blog__cards__card__likes">{{ blog.likes }}</div>
+                </div>
             </div>
         }
     </div>
