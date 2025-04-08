@@ -1,14 +1,15 @@
 .background {
     position: fixed;
-    top: 0;
+    top: 5vh;
     left: 0;
     z-index: -1;
     background: url('../images/background.png');
     background-position: center;
     background-repeat: no-repeat;
+    filter: brightness(1);
     background-size: 55%;
     width: 100vw;
-    height: 85vh;
+    height: 100vh;
     animation: scroll-slide linear;
     animation-timeline: scroll();
 }
@@ -44,14 +45,16 @@
 }
 @keyframes scroll-slide {
     33% {
-        background-position-x: 5vw;
-        background-size: 70%;
+        filter: brightness(3);
+        background-size: 100%;
     }
     70% {
-        background-position-x: 15vw;
+        filter: brightness(2);
+        background-position-x: 5vw;
         background-size: 80%;
     }
     100% {
+        filter: brightness(0.5);
         background-position-x: center;
         background-size: 55%;
     }
