@@ -60,8 +60,34 @@
     }
 }
 
+@keyframes fade-in-left {
+    from {
+        translate: -25vw;
+        opacity: 0;
+    }
+}
+
+@keyframes fade-in-right {
+    from {
+        translate: 125vw;
+        opacity: 0;
+    }
+}
+
+@keyframes fade-in {
+    from {
+        opacity: 0;
+    }
+}
 .services {
     margin: 32px 96px;
+
+    animation-name: fade-in-left;
+    animation-fill-mode: auto;
+    animation-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+    view-timeline-name: --fade-in-left-cards;
+    animation-timeline: --fade-in-left-cards;
+     
     &__heading {
         font-size: 64px;
         font-weight: lighter;
@@ -107,6 +133,13 @@
 }
 .events {
     margin: 96px;
+
+    animation-name: fade-in-right;
+    animation-fill-mode: auto;
+    animation-timing-function: cubic-bezier(0.075, 0.92, 0, 1);
+    view-timeline-name: --fade-in-left-cards;
+    animation-timeline: --fade-in-left-cards;
+    
     &__heading {
         font-size: 64px;
         font-weight: lighter;
@@ -147,6 +180,13 @@
 }
 .blog {
     margin: 96px;
+
+    animation-name: fade-in;
+    animation-fill-mode: auto;
+    animation-timing-function: cubic-bezier(0.19, 0.5, 0.22, 1);
+    view-timeline-name: --fade-in-left-cards;
+    animation-timeline: --fade-in-left-cards;
+
     &__heading {
         font-size: 64px;
         font-weight: lighter;
