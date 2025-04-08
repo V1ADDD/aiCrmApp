@@ -34,7 +34,7 @@
     <h2 class="blog__heading">Blog</h2>
     <div class="blog__cards">
         @for (blog of blogList(); track blog.id) {
-            <div class="blog__cards__card">
+            <div class="blog__cards__card" (click)="toggleModal(blog.id)">
                 <img [src]="'assets/images/' + blog.image">
                 <p>{{ blog.author }}</p>
                 <h3>{{ blog.name }}</h3>
@@ -48,3 +48,4 @@
         }
     </div>
 </section>
+<app-blog-modal [showModal]="modal()" [idBlog]="idClicked()"></app-blog-modal>

@@ -1,0 +1,54 @@
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+    &__overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: rgba(0, 0, 0, 0.5);
+    }
+    &__content {
+        background-color: rgba(0, 0, 0, 0.716);
+        font-size: 18px;
+        font-weight: lighter;
+        border: 1px solid #5300BC;
+        padding: 24px;
+        box-shadow: 1px 1px 0 white, -1px -1px 0 white;
+        text-shadow: 0.4px 0.4px 0 white;
+        z-index: 1002;
+        max-width: 80vw;
+        width: 100%;
+        text-align: center;
+        img {
+            height: 200px;
+        }
+        h2 {
+            text-align: start;
+        }
+        p {
+            font-size: 12px;
+            text-align:justify;
+            &:last-child {
+                text-align: end;
+            }
+        }
+        button {
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            border-radius: 3px;
+            cursor: pointer;
+        }
+    }
+  }
+  

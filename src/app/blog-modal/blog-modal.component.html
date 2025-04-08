@@ -1,0 +1,10 @@
+<div class="modal" *ngIf="showModal">
+    <div class="modal__overlay" (click)="showModal = false"></div>
+    <div class="modal__content">
+        <img [src]="'assets/images/' + blog()[idBlog-1].image">
+        <h2>{{ blog()[idBlog-1].name }}</h2>
+        <p>{{ blog()[idBlog-1].description }}</p>
+        <p>{{ blog()[idBlog-1].author }}</p>
+    </div>
+</div>
+  
