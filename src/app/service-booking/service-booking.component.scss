@@ -5,7 +5,7 @@
     }
 }
 
-.modal {
+.booking {
     position: fixed;
     animation: fade-in 0.5s ease-in-out;
     top: 0;
@@ -33,23 +33,36 @@
         box-shadow: 1px 1px 0 white, -1px -1px 0 white;
         text-shadow: 0.4px 0.4px 0 white;
         z-index: 1002;
-        max-width: 500px;
+        max-width: 700px;
         width: 100%;
-        text-align: center;
-        img {
-            margin-bottom: 12px;
-            border: 1px solid #5300BC;
-            box-shadow: 1px 1px 0 white, -1px -1px 0 white;
-            height: 300px;
+        form {
+            margin: 16px 0 0;
         }
-        h2 {
-            text-align: start;
-        }
-        p {
+        label {
             font-size: 18px;
-            text-align:justify;
-            &:last-child {
-                text-align: end;
+        }
+        input {
+            display: block;
+            font-size: 16px;
+            margin: 16px 0;
+            background: transparent;
+            color: white;
+            padding: 6px 12px;
+            border: 1px #5300BC solid; 
+            box-shadow: 1px 1px 0 white;
+        }
+        button {
+            font-size: 16px;
+            background: #5300BC;
+            color: white;
+            border-radius: 16px;
+            padding: 12px 24px;
+            border: none;
+            cursor: pointer;
+            transition: all 1s ease-in-out;
+            &:hover {
+                border-radius: 32px;
+                box-shadow: 1px 1px 0 white, -1px 1px 0 white, -1px -1px 0 white, 1px -1px 0 white;
             }
         }
     }

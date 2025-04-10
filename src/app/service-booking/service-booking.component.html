@@ -1,0 +1,12 @@
+<div class="booking" *ngIf="showBooking">
+    <div class="booking__overlay" (click)="showBooking = false"></div>
+    <div class="booking__content">
+        <h2>Booking {{ service()[idService-1].name }} for {{ service()[idService-1].price | currency: 'USD' : 'symbol' : '1.0-0' }}!</h2>
+        <form>
+            <label for="contact">Your contacts:</label>
+            <input id="contact" name="contact" type="text" placeholder="example@exmpl.com">
+            <button>Book</button>
+        </form>
+    </div>
+</div>
+  

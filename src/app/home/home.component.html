@@ -12,11 +12,12 @@
                 <h3>{{ service.name }}</h3>
                 <hr>
                 <p>{{ service.price | currency: 'USD' : 'symbol' : '1.0-0'}}</p>
-                <button>Book Now</button>
+                <button (click)="toggleBooking(service.id)">Book Now</button>
             </div>
         }
     </div>
 </section>
+<app-service-booking [showBooking]="booking()" [idService]="serviceClicked()"></app-service-booking>
 <section class="events">
     <h2 class="events__heading">Events</h2>
     <div class="events__cards">
