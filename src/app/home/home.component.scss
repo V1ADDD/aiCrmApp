@@ -26,6 +26,7 @@
         text-shadow: 0.5px 0.5px 0 white;
         font-size: 36px;
         padding: 24px 0;
+        margin: 0 0 24px;
     }
     a {
         text-decoration: none;
@@ -293,10 +294,12 @@
             font-size: 20px;
             text-shadow: 0.5px 0.5px 0 white;
             line-height: 2rem;
+            margin: 0 0 24px;
         }
-        button {
+        a {
+            text-decoration: none;
             font-size: 16px;
-            margin: 16px 0;
+            margin: 32px 0;
             background: #5300BC;
             color: white;
             border-radius: 16px;
