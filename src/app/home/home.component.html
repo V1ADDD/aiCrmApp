@@ -61,3 +61,14 @@
         </div>
     </div>
 </section>
+<section class="clients">
+    <h2 class="clients__heading">Clients</h2>
+    <div class="clients__container">
+        @for (client of clientsList(); track client.id) {
+            <div class="clients__container__review">
+                <p>{{ client.text }}</p>
+                <p>{{ client.name }}</p>
+            </div>
+        }
+    </div>
+</section>
