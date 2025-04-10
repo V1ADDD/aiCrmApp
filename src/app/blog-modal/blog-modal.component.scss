@@ -33,17 +33,20 @@
         box-shadow: 1px 1px 0 white, -1px -1px 0 white;
         text-shadow: 0.4px 0.4px 0 white;
         z-index: 1002;
-        max-width: 80vw;
+        max-width: 500px;
         width: 100%;
         text-align: center;
         img {
-            height: 200px;
+            margin-bottom: 12px;
+            border: 1px solid #5300BC;
+            box-shadow: 1px 1px 0 white, -1px -1px 0 white;
+            height: 300px;
         }
         h2 {
             text-align: start;
         }
         p {
-            font-size: 12px;
+            font-size: 18px;
             text-align:justify;
             &:last-child {
                 text-align: end;

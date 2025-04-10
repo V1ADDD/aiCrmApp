@@ -23,7 +23,6 @@ export class HomeComponent {
   toggleModal(id: number, flag: boolean = false) {
     this.modal.set(flag);
     this.idClicked.set(id);
-    console.log(id)
     this.cdr.detectChanges();
     if (!flag) this.toggleModal(id, true);
   }
