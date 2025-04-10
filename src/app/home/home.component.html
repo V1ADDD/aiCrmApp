@@ -26,11 +26,12 @@
                 <h3>{{ event.name }}</h3>
                 <p>{{ event.date }}</p>
                 <p>{{ event.address }}</p>
-                <button>Register Now</button>
+                <button (click)="toggleEvent(event.id)">Register Now</button>
             </div>
         }
     </div>
 </section>
+<app-events-modal [showEvent]="registering()" [idEvent]="eventClicked()"></app-events-modal>
 <section class="blog" id="blog">
     <h2 class="blog__heading">Blog</h2>
     <div class="blog__cards">

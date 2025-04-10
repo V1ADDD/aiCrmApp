@@ -6,10 +6,11 @@ import { blog } from '../data/blog';
 import { BlogModalComponent } from '../blog-modal/blog-modal.component';
 import { clients } from '../data/clients';
 import { ServiceBookingComponent } from '../service-booking/service-booking.component';
+import { EventsModalComponent } from '../events-modal/events-modal.component';
 
 @Component({
   selector: 'app-home',
-  imports: [CurrencyPipe, BlogModalComponent, ServiceBookingComponent],
+  imports: [CurrencyPipe, BlogModalComponent, ServiceBookingComponent, EventsModalComponent],
   templateUrl: './home.component.html',
   styleUrl: './home.component.scss'
 })
@@ -20,8 +21,10 @@ export class HomeComponent {
   clientsList = signal(clients);
   modal = signal(false);
   booking = signal(false);
+  registering = signal(false);
   idClicked = signal(0);
   serviceClicked = signal(0);
+  eventClicked = signal(0);
 
   constructor(private cdr: ChangeDetectorRef) {}
 
@@ -37,5 +40,12 @@ export class HomeComponent {
     this.serviceClicked.set(id);
     this.cdr.detectChanges();
     if (!flag) this.toggleBooking(id, true);
+  }
+
+  toggleEvent(id: number, flag: boolean = false) {
+    this.registering.set(flag);
+    this.eventClicked.set(id);
+    this.cdr.detectChanges();
+    if(!flag) this.toggleEvent(id, true);
   }
 }

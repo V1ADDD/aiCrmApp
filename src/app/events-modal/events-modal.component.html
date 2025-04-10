@@ -1,0 +1,12 @@
+<div class="event" *ngIf="showEvent">
+    <div class="event__overlay" (click)="showEvent = false"></div>
+    <div class="event__content">
+        <h2>Registering on {{ event()[idEvent-1].name }} on {{ event()[idEvent-1].date }} at {{ event()[idEvent-1].address }}!</h2>
+        <form>
+            <label for="contact">Your contacts:</label>
+            <input id="contact" name="contact" type="text" placeholder="example@exmpl.com">
+            <button>Submit</button>
+        </form>
+    </div>
+</div>
+  
