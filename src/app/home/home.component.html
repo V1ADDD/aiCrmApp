@@ -1,10 +1,10 @@
 <div class="background"></div>
-<article class="main">
+<article class="main" id="home">
     <h2 class="main__heading">AI Boosting Your Success</h2>
     <p class="main__subheading">Leading the Future of Automation</p>
     <button>Get Started</button>
 </article>
-<section class="services">
+<section class="services" id="book">
     <h2 class="services__heading">Services</h2>
     <div class="services__cards">
         @for (service of servicesList(); track service.id) {
@@ -30,7 +30,7 @@
         }
     </div>
 </section>
-<section class="blog">
+<section class="blog" id="blog">
     <h2 class="blog__heading">Blog</h2>
     <div class="blog__cards">
         @for (blog of blogList(); track blog.id) {
@@ -49,7 +49,7 @@
     </div>
 </section>
 <app-blog-modal [showModal]="modal()" [idBlog]="idClicked()"></app-blog-modal>
-<section class="banner">
+<section class="banner" id="program">
     <h2 class="banner__heading">Our AI Journey Begins Here</h2>
     <div class="banner__container">
         <img src="../../assets/images/server.png">

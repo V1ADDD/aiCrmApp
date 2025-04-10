@@ -1,0 +1,38 @@
+.footer {
+    margin: 64px;
+    hr {
+        margin: 24px 0;
+        border: 1px solid #5300BC;
+        box-shadow: 0px 0.5px 0 white;
+    }
+    &__heading {
+        font-size: 64px;
+        font-weight: lighter;
+        letter-spacing: -3px;
+        text-shadow: 0.5px 0.5px 0 white;
+        margin: 36px 0;
+    }
+    &__container {
+        display: flex;
+        justify-content: space-between;
+        &__contacts {
+            width: 17%;
+        }
+        p {
+            &:first-child {
+                margin-bottom: 64px;
+            }
+        }
+    }
+
+    p, li {
+        list-style-type: none;
+        line-height: 2rem;
+        font-size: 20px;
+        text-shadow: 0.5px 0.5px 0 white;
+    }
+
+    ul {
+        margin-bottom: 64px;
+    }
+}
