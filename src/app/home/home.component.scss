@@ -261,3 +261,53 @@
         }
     }
 }
+.banner {
+    margin: 32px 96px;
+
+    animation-name: fade-in-left;
+    animation-fill-mode: auto;
+    animation-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+    view-timeline-name: --fade-in-left-cards;
+    animation-timeline: --fade-in-left-cards;
+     
+    &__heading {
+        font-size: 64px;
+        font-weight: lighter;
+        letter-spacing: -3px;
+        text-shadow: 0.5px 0.5px 0 white;
+        margin: 36px 0;
+        width: 500px;
+    }
+
+    &__container {
+        display: flex;
+        justify-content: space-between;
+        gap: 8%;
+        img {
+            width: 50%;
+            border: 1px solid #5300BC;
+            box-shadow: 1px 0 white, -1px 1px 0 white, -1px -1px 0 white, 1px -1px 0 white;
+        }
+        p {
+            font-size: 20px;
+            text-shadow: 0.5px 0.5px 0 white;
+            line-height: 2rem;
+        }
+        button {
+            font-size: 16px;
+            margin: 16px 0;
+            background: #5300BC;
+            color: white;
+            border-radius: 16px;
+            padding: 12px 24px;
+            border: none;
+            cursor: pointer;
+            transition: all 1s ease-in-out;
+            &:hover {
+                border-radius: 32px;
+                box-shadow: 1px 1px 0 white, -1px 1px 0 white, -1px -1px 0 white, 1px -1px 0 white;
+            }
+        }
+    }
+    
+}
