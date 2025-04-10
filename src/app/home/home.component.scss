@@ -184,8 +184,8 @@
     animation-name: fade-in;
     animation-fill-mode: auto;
     animation-timing-function: cubic-bezier(0.19, 0.5, 0.22, 1);
-    view-timeline-name: --fade-in-left-cards;
-    animation-timeline: --fade-in-left-cards;
+    view-timeline-name: --fade-in;
+    animation-timeline: --fade-in;
 
     &__heading {
         font-size: 64px;
@@ -262,7 +262,7 @@
     }
 }
 .banner {
-    margin: 32px 96px;
+    margin: 64px 96px;
 
     animation-name: fade-in-left;
     animation-fill-mode: auto;
@@ -309,5 +309,51 @@
             }
         }
     }
-    
+}
+
+.clients {
+    margin: 64px 96px;
+
+    animation-name: fade-in;
+    animation-fill-mode: auto;
+    animation-timing-function: cubic-bezier(0.19, 0.5, 0.22, 1);
+    view-timeline-name: --fade-in;
+    animation-timeline: --fade-in;
+
+     
+    &__heading {
+        font-size: 64px;
+        font-weight: lighter;
+        letter-spacing: -3px;
+        text-shadow: 0.5px 0.5px 0 white;
+        margin: 36px 0;
+    }
+    &__container {
+        &__review {
+            width: 500px;
+            &:nth-child(2n+1) {
+                animation-name: fade-in-right;
+                animation-fill-mode: auto;
+                animation-timing-function: cubic-bezier(0.075, 0.92, 0, 1);
+                view-timeline-name: --fade-in-left-cards;
+                animation-timeline: --fade-in-left-cards;
+            }
+            &:nth-child(2n) {
+                animation-name: fade-in-left;
+                animation-fill-mode: auto;
+                animation-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+                view-timeline-name: --fade-in-left-cards;
+                animation-timeline: --fade-in-left-cards;
+                margin-left: calc(100% - 500px);
+            }
+        }
+    }
+    p {
+        font-size: 20px;
+        text-shadow: 0.5px 0.5px 0 white;
+        line-height: 2rem;
+        &:nth-child(2n) {
+            margin-top: 24px;
+        }
+    }
 }
