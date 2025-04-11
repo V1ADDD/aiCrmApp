@@ -1,11 +1,16 @@
 <header class="header">
     <h2 class="header__logo">AIBoost</h2>
-    <nav class="header__nav">
-        <ul>
-            <li><a href="#home">Home</a></li>
-            <li><a href="#book">Book Online</a></li>
-            <li><a href="#blog">Blog</a></li>
-            <li><a href="#program">Program List</a></li>
-        </ul>
+    <nav class="header__nav" [ngClass]="{'active': isMenuOpen}" #nav>
+      <ul>
+        <li><a href="#home" (click)="closeMenu()">Home</a></li>
+        <li><a href="#book" (click)="closeMenu()">Book Online</a></li>
+        <li><a href="#blog" (click)="closeMenu()">Blog</a></li>
+        <li><a href="#program" (click)="closeMenu()">Program List</a></li>
+      </ul>
     </nav>
-</header>
+    <button class="burger" [ngClass]="{'active': isMenuOpen}" (click)="toggleMenu()" aria-label="Toggle menu">
+      <span class="burger__line"></span>
+      <span class="burger__line"></span>
+      <span class="burger__line"></span>
+    </button>
+  </header>
